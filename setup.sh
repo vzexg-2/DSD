@@ -1,6 +1,6 @@
 # :: compile
-clang -o analyze_so analyze_so.c
-clang -o dump_so dump_so.c
+gcc -o analyze_so analyze_so.c
+gcc -o dump_so dump_so.c
 
 mkdir .src; mv dump_so.c analyze_so.c $PWD/.src
 echo "
